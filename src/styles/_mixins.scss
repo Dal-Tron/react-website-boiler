@@ -1,0 +1,58 @@
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xsm-desktop {
+    @media (max-width: 770px) {
+      @content;
+    }
+  }
+  @if $breakpoint == sm-desktop {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == md-desktop {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg-desktop {
+    @media (min-width: 1500px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xlg-desktop {
+    @media (min-width: 2000px) {
+      @content;
+    }
+  }
+  @if $breakpoint == min-aspect-16-9 {
+    @media (min-aspect-ratio: 16/9) {
+      @content;
+    }
+  }
+  @if $breakpoint == max-aspect-16-9 {
+    @media (max-aspect-ratio: 16/9) {
+      @content;
+    }
+  }
+}
+
+@mixin boxShadow1 {
+  -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "production": "bachelorcoast-production",
+    "default": "bachelorcoast-production"
+  }
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("./fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+.font-lato-regular {
+  font-family: "Lato-Regular", sans-serif;
+}
+.bg_cross-pattern {
+  background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 770px) {
+  html {
+    font-size: 50%;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

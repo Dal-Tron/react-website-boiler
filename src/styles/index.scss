@@ -1,0 +1,33 @@
+@import "styles/fonts";
+@import "styles/mixins";
+@import "styles/backgrounds";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(xlg-desktop) {
+    font-size: 75%;
+  }
+
+  @include respond(sm-desktop) {
+    font-size: 56.25%;
+  }
+
+  @include respond(xsm-desktop) {
+    font-size: 50%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  // overflow-y: scroll;
+}
