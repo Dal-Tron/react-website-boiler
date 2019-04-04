@@ -1,19 +1,18 @@
 import React, { Component } from "react";
-import { Layout } from "antd";
 
 import MainLayoutWithNav from "../layout/MainLayoutWithNav";
 
-const { Content } = Layout;
+import "./styles/MainPage.css";
 
 class MainPage extends Component {
   render() {
     return (
       <MainLayoutWithNav
         screens={
-          <div>
-            <Content>
-              <p>Content</p>
-            </Content>
+          <div className="header">
+            <div className="header_title">
+              Boilerplate
+            </div>
           </div>
         }
       />

@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "MainPage.css",
+	"sources": [
+		"MainPage.scss",
+		"../../../styles/_mixins.scss"
+	],
+	"names": [],
+	"mappings": "AAGK,AAAD,aAAO,AAAC,CCFV,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,GAAG,CACR,IAAI,CAAE,GAAG,CACT,SAAS,CAAE,qBAAqB,CDE1B,SAAS,CAAE,KAAK,CACnB"
+}
